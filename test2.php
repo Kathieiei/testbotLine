@@ -11,27 +11,33 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
+if($arrJson['events'][0]['message']['text'] == "ไอดี"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "สวัสดี ID คุณคือ ".$arrJson['events'][0]['source']['userId'];
-}else if($arrJson['events'][0]['message']['text'] == "ชื่ออะไร"){
+  $arrPostData['messages'][0]['text'] = "ID คุณคือ ".$arrJson['events'][0]['source']['userId'];
+}else if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันยังไม่มีชื่อนะ";
-}else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
+  $arrPostData['messages'][0]['text'] = "สวัสดี เราคือแชทบอทที่ช่วยในการดูแลงานระหว่างเจ้าของรถที่มีรถหลายๆคน กับเหล่าคนขับรถที่เจ้าของรถจ้างมา และดูแลในส่วนของการบันทึกการทำงานระหว่างผู้จ้างที่มาจ้างคนเจ้าของรถอีกด้วย";
+  $arrPostData['messages'][1]['type'] = "sticker";
+  $arrPostData['messages'][1]['packageId'] = "11537";
+  $arrPostData['messages'][1]['stickerId'] = "52002739";
+}else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "ฉันสามารถจ่ายงานให้แก่คนขับรถเป็นรายคน สามารถบันทึกการทำงาน เก็บข้อมูลเป็นสถิติ รายงาน และฉันยังสามารถแจ้งประวัติการทำงานต่อผู้ที่มาจ้างคุณเจ้าของรถอีกด้วย (เฉพาะงานที่ตัวเองจ้างเท่านั้นนะ)";
+  $arrPostData['messages'][1]['type'] = "sticker";
+  $arrPostData['messages'][1]['packageId'] = "11537";
+  $arrPostData['messages'][1]['stickerId'] = "52002734";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "sticker";
   $arrPostData['messages'][0]['packageId'] = "11537";
-  $arrPostData['messages'][0]['stickerId'] = "52002739";
+  $arrPostData['messages'][0]['stickerId'] = "52002744";
 
 }
  

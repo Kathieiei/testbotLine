@@ -2,6 +2,8 @@
 
 
 $API_URL = 'https://api.line.me/v2/bot/message';
+$API_URL = 'https://api.line.me/v2/bot/message/push';
+
 $ACCESS_TOKEN = 'Xz5YorliDxlUasYbtcV1PG8hNQh6Ce4KGTWNUkwAdCEsSzfRaa/g2CdtQuGrmkSSwxAFKRni8LxMoM+8vufU1aT0tJswTReq3FfVi8pp+5NduiLAhZUHuS2/yF1A6ZEZ6KJKRxdFeFvad6XmTfwYHgdB04t89/1O/w1cDnyilFU='; 
 $channelSecret = '8e4788f8f2b0a590fe809041521f1bf6';
 

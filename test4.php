@@ -1,5 +1,5 @@
 <?php
-   $accessToken = "";//copy ข้อความ Channel access token ตอนที่ตั้งค่า
+   $accessToken = "Xz5YorliDxlUasYbtcV1PG8hNQh6Ce4KGTWNUkwAdCEsSzfRaa/g2CdtQuGrmkSSwxAFKRni8LxMoM+8vufU1aT0tJswTReq3FfVi8pp+5NduiLAhZUHuS2/yF1A6ZEZ6KJKRxdFeFvad6XmTfwYHgdB04t89/1O/w1cDnyilFU=";//copy ข้อความ Channel access token ตอนที่ตั้งค่า
    $content = file_get_contents('php://input');
    $arrayJson = json_decode($content, true);
    $arrayHeader = array();
@@ -9,16 +9,14 @@
    $message = $arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
-   #ตัวอย่าง Message Type "Text + Sticker"
-   if($message == "1"){
-      $arrayPostData['to'] = $id;
-      $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
-      $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
-      pushMsg($arrayHeader,$arrayPostData);
-   }
+   if($message == "นับ"){
+       for($i=1;$i<=10;$i++){
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $i;
+          pushMsg($arrayHeader,$arrayPostData);
+       }
+    }
    function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
       $ch = curl_init();

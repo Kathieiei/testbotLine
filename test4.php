@@ -11,7 +11,7 @@
    $id = 'Ud34e97f0f96077eadfe7f2d339f87266';
 
      
-          $arrayPostData['to'] = $id;
+          $arrayPostData['to'] = 'Ud34e97f0f96077eadfe7f2d339f87266';
           $arrPostData['messages'][0]['type'] = "text";
           $arrPostData['messages'][0]['text'] = "สวัสดี เราคือแชทบอทที่ช่วยในการดูแลงานระหว่างเจ้าของรถที่มีรถหลายๆคน กับเหล่าคนขับรถที่เจ้าของรถจ้างมา และดูแลในส่วนของการบันทึกการทำงานระหว่างผู้จ้างที่มาจ้างคนเจ้าของรถอีกด้วย";
           $arrPostData['messages'][1]['type'] = "sticker";

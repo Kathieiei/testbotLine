@@ -8,15 +8,18 @@
    //รับข้อความจากผู้ใช้
    $message = $arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
-   $id = $arrayJson['events'][0]['source']['userId'];
-   if($message == "นับ"){
-       for($i=1;$i<=10;$i++){
+   $id = 'Ud34e97f0f96077eadfe7f2d339f87266';
+
+     
           $arrayPostData['to'] = $id;
-          $arrayPostData['messages'][0]['type'] = "text";
-          $arrayPostData['messages'][0]['text'] = $i;
+          $arrPostData['messages'][0]['type'] = "text";
+          $arrPostData['messages'][0]['text'] = "สวัสดี เราคือแชทบอทที่ช่วยในการดูแลงานระหว่างเจ้าของรถที่มีรถหลายๆคน กับเหล่าคนขับรถที่เจ้าของรถจ้างมา และดูแลในส่วนของการบันทึกการทำงานระหว่างผู้จ้างที่มาจ้างคนเจ้าของรถอีกด้วย";
+          $arrPostData['messages'][1]['type'] = "sticker";
+          $arrPostData['messages'][1]['packageId'] = "11537";
+          $arrPostData['messages'][1]['stickerId'] = "52002739";
           pushMsg($arrayHeader,$arrayPostData);
-       }
-    }
+    
+ 
    function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
       $ch = curl_init();

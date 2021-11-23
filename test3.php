@@ -7,6 +7,7 @@ $userId = 'Ud34e97f0f96077eadfe7f2d339f87266';
 
 $jsonFlex = '{
   "type": "bubble",
+  "altText": "Flex Message",
   "direction": "ltr",
   "body": {
     "type": "box",

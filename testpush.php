@@ -40,12 +40,12 @@
             <div class="d-flex justify-content-center align-items-center h-100 p-1 p-sm-5">
                 <div class="row w-100 p-lg-5">
 
-                    <div class="col-md-6 d-flex align-items-center flex-column text-center">
+                    <div class="col-md-12 d-flex align-items-center flex-column text-center">
                         <div class="add rounded-circle p-5"><i class="fas fa-plus"></i></i></div>
-                        <h1 class="mt-md-4 mb-5 ">มอบหมายงาน</h1>
+                        <h1 class="md-4 mb-5 ">มอบหมายงาน</h1>
                     </div>
 
-                    <div class="col-md-6 d-flex justify-content-center flex-column">
+                    <div class="col-md-12 d-flex justify-content-center flex-column">
                         <form class="w-100" action="" method="post">
                             <div class="mb-3">
                                 <label for="name_w" class="form-label">ชื่องาน</label>

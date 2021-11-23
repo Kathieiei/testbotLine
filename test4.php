@@ -16,13 +16,17 @@ print("MySQL(Connection)> ".$errorcode);
 }
 $getUser = $mysql->query("SELECT * worktod");
 
-
+while(
+    $row = $getUser->fetch_assoc()){
+    $name_w = $row['name_w'];
+    $name_d = $row['name_d'];
+  }
 // User ID
 $userId = 'Ud34e97f0f96077eadfe7f2d339f87266';
 // ข้อความที่ต้องการส่ง
 $messages = array(
     'type' => 'text',
-    'text' => $name_w,
+    'text' => "name_w",
 );
 
 $post = json_encode(array(

@@ -7,7 +7,7 @@ $userId = 'Ud34e97f0f96077eadfe7f2d339f87266';
 
 $flexDataJson = '{
   "type": "flex",
-  "altText": "Flex Message",
+  "altText": "มีงานใหม่",
   "contents": {
     "type": "carousel",
     "contents": [

@@ -6,156 +6,165 @@ $userId = 'Ud34e97f0f96077eadfe7f2d339f87266';
 
 
 $jsonFlex = '{
-  "type": "bubble",
+  "type": "flex",
   "altText": "Flex Message",
-  "direction": "ltr",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "md",
-    "action": {
-      "type": "uri",
-      "label": "Action",
-      "uri": "https://linecorp.com"
-    },
+  "contents": {
+    "type": "carousel",
     "contents": [
       {
-        "type": "text",
-        "text": "มีงานใหม่เข้า",
-        "weight": "bold",
-        "size": "3xl",
-        "contents": []
-      },
-      {
-        "type": "text",
-        "text": "กรุณาอ่านรายละเอียดเพิ่มเติม",
-        "size": "lg",
-        "wrap": true,
-        "contents": [
-          {
-            "type": "span",
-            "text": "กรุณาอ่านรายละเอียดเพิ่มเติม และกดเริ่มงาน"
-          }
-        ]
-      },
-      {
-        "type": "separator"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "spacer",
-            "size": "lg"
+        "type": "bubble",
+        "direction": "ltr",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "md",
+          "action": {
+            "type": "uri",
+            "label": "Action",
+            "uri": "https://linecorp.com"
           },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": [
-              {
-                "type": "text",
-                "text": "สถานที่ต้นทาง",
-                "weight": "bold",
-                "color": "#979797FF",
-                "margin": "sm",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "บางแพ",
-                "weight": "bold",
-                "color": "#00C04EFF",
-                "margin": "sm",
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": [
-              {
-                "type": "text",
-                "text": "สถานที่ปลายทาง",
-                "weight": "bold",
-                "color": "#979797FF",
-                "margin": "sm",
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "จอมบึง",
-                "weight": "bold",
-                "color": "#00C04EFF",
-                "margin": "sm",
-                "contents": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "spacer",
-            "size": "lg"
-          },
-          {
-            "type": "separator",
-            "color": "#ADADADFF"
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "spacer",
-            "size": "lg"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": [
-              {
-                "type": "text",
-                "text": "30 เมษายน 2566",
-                "weight": "bold",
-                "size": "lg",
-                "color": "#353535FF",
-                "align": "center",
-                "margin": "sm",
-                "contents": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "ดูรายละเอียด",
-          "uri": "https://linecorp.com"
+          "contents": [
+            {
+              "type": "text",
+              "text": "มีงานใหม่เข้า",
+              "weight": "bold",
+              "size": "3xl",
+              "contents": []
+            },
+            {
+              "type": "text",
+              "text": "กรุณาอ่านรายละเอียดเพิ่มเติม",
+              "size": "lg",
+              "wrap": true,
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "กรุณาอ่านรายละเอียดเพิ่มเติม และกดเริ่มงาน"
+                }
+              ]
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "spacer",
+                  "size": "lg"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "สถานที่ต้นทาง",
+                      "weight": "bold",
+                      "color": "#979797FF",
+                      "margin": "sm",
+                      "contents": []
+                    },
+                    {
+                      "type": "text",
+                      "text": "บางแพ",
+                      "weight": "bold",
+                      "color": "#00C04EFF",
+                      "margin": "sm",
+                      "contents": []
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "สถานที่ปลายทาง",
+                      "weight": "bold",
+                      "color": "#979797FF",
+                      "margin": "sm",
+                      "contents": []
+                    },
+                    {
+                      "type": "text",
+                      "text": "จอมบึง",
+                      "weight": "bold",
+                      "color": "#00C04EFF",
+                      "margin": "sm",
+                      "contents": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "spacer",
+                  "size": "lg"
+                },
+                {
+                  "type": "separator",
+                  "color": "#ADADADFF"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "spacer",
+                  "size": "lg"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "30 เมษายน 2566",
+                      "weight": "bold",
+                      "size": "lg",
+                      "color": "#353535FF",
+                      "align": "center",
+                      "margin": "sm",
+                      "contents": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
-        "color": "#264653",
-        "style": "primary"
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "ดูรายละเอียด",
+                "uri": "https://linecorp.com"
+              },
+              "color": "#264653",
+              "style": "primary"
+            }
+          ]
+        }
       }
-    ]
-  }
-}';
+
+      ]
+    }
+  }';
 
 
 // ข้อความที่ต้องการส่ง

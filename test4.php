@@ -26,7 +26,7 @@ $userId = 'Ud34e97f0f96077eadfe7f2d339f87266';
 // ข้อความที่ต้องการส่ง
 $messages = array(
     'type' => 'text',
-    'text' => "name_w",
+    'text' => $name_w,
 );
 
 $post = json_encode(array(

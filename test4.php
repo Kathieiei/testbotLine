@@ -1,13 +1,34 @@
 <?php
 // Access Token
 $access_token = 'Xz5YorliDxlUasYbtcV1PG8hNQh6Ce4KGTWNUkwAdCEsSzfRaa/g2CdtQuGrmkSSwxAFKRni8LxMoM+8vufU1aT0tJswTReq3FfVi8pp+5NduiLAhZUHuS2/yF1A6ZEZ6KJKRxdFeFvad6XmTfwYHgdB04t89/1O/w1cDnyilFU=';
+
+// ดาต้าเบส
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "rondingt";
+$mysql = new mysqli($servername, $username, $password, $dbname);
+mysqli_set_charset($mysql, "utf8");
+
+if ($mysql->connect_error){
+$errorcode = $mysql->connect_error;
+print("MySQL(Connection)> ".$errorcode);
+}
+$getUser = $mysql->query("SELECT * worktod");
+
+while(
+    $row = $getUser->fetch_assoc()){
+    $name_w = $row['name_w'];
+    $name_d = $row['name_d'];
+  }
 // User ID
 $userId = 'Ud34e97f0f96077eadfe7f2d339f87266';
 // ข้อความที่ต้องการส่ง
 $messages = array(
     'type' => 'text',
-    'text' => 'ทดสอบการส่งข้อความ',
+    'text' => $name_w,
 );
+
 $post = json_encode(array(
     'to' => array($userId),
     'messages' => array($messages),

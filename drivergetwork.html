@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>รายละเอียดงาน</title>
   </head>
   <body>
   <section>
@@ -18,7 +18,7 @@
         <div class="d-flex justify-content-center align-items-center h-100 p-1 p-sm-5">
             <div class="card" style="width: 18rem;">
                 <img id="pictureUrl">
-                <p id="displayName"><b>displayName:</b> </p>
+                <p id="displayName"></p>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -41,12 +41,9 @@
       async function getUserProfile() {
         const profile = await liff.getProfile()
         document.getElementById("pictureUrl").src = profile.pictureUrl
-        document.getElementById("userId").append(profile.userId)
-        document.getElementById("statusMessage").append(profile.statusMessage)
         document.getElementById("displayName").append(profile.displayName)
       } 
       async function main() {
-        alert("LINE Developers x Skooldio")
         await liff.init({ liffId: "1656659245-YdbqGGO6" })
         getUserProfile()
       }

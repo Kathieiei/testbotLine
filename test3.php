@@ -196,7 +196,7 @@ $messages = array(
 );
 $post = json_encode(array(
     'to' => array($userId),
-    'messages' => [$flexDataJsonDeCode],
+    'messages' => array($flexDataJsonDeCode),
 ));
 // URL ของบริการ Replies สำหรับการตอบกลับด้วยข้อความอัตโนมัติ
 $url = 'https://api.line.me/v2/bot/message/multicast';

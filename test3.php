@@ -13,44 +13,132 @@ $flexDataJson = '{
     "contents": [
       {
         "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png",
-          "size": "full",
-          "aspectRatio": "20:13",
-          "aspectMode": "cover"
-        },
+        "direction": "ltr",
         "body": {
           "type": "box",
           "layout": "vertical",
-          "spacing": "sm",
+          "spacing": "md",
+          "action": {
+            "type": "uri",
+            "label": "Action",
+            "uri": "https://linecorp.com"
+          },
           "contents": [
             {
               "type": "text",
-              "text": "Arm Chair, White",
-              "size": "xl",
+              "text": "มีงานใหม่เข้า",
               "weight": "bold",
-              "wrap": true
+              "size": "3xl",
+              "contents": []
+            },
+            {
+              "type": "text",
+              "text": "กรุณาอ่านรายละเอียดเพิ่มเติม",
+              "size": "lg",
+              "wrap": true,
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "กรุณาอ่านรายละเอียดเพิ่มเติม และกดเริ่มงาน"
+                }
+              ]
+            },
+            {
+              "type": "separator"
             },
             {
               "type": "box",
-              "layout": "baseline",
+              "layout": "vertical",
+              "spacing": "sm",
               "contents": [
                 {
-                  "type": "text",
-                  "text": "$49",
-                  "flex": 0,
-                  "size": "xl",
-                  "weight": "bold",
-                  "wrap": true
+                  "type": "spacer",
+                  "size": "lg"
                 },
                 {
-                  "type": "text",
-                  "text": ".99",
-                  "flex": 0,
-                  "size": "sm",
-                  "weight": "bold",
-                  "wrap": true
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "สถานที่ต้นทาง",
+                      "weight": "bold",
+                      "color": "#979797FF",
+                      "margin": "sm",
+                      "contents": []
+                    },
+                    {
+                      "type": "text",
+                      "text": "บางแพ",
+                      "weight": "bold",
+                      "color": "#00C04EFF",
+                      "margin": "sm",
+                      "contents": []
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "สถานที่ปลายทาง",
+                      "weight": "bold",
+                      "color": "#979797FF",
+                      "margin": "sm",
+                      "contents": []
+                    },
+                    {
+                      "type": "text",
+                      "text": "จอมบึง",
+                      "weight": "bold",
+                      "color": "#00C04EFF",
+                      "margin": "sm",
+                      "contents": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "spacer",
+                  "size": "lg"
+                },
+                {
+                  "type": "separator",
+                  "color": "#ADADADFF"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "spacer",
+                  "size": "lg"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "30 เมษายน 2566",
+                      "weight": "bold",
+                      "size": "lg",
+                      "color": "#353535FF",
+                      "align": "center",
+                      "margin": "sm",
+                      "contents": []
+                    }
+                  ]
                 }
               ]
             }
@@ -59,126 +147,16 @@ $flexDataJson = '{
         "footer": {
           "type": "box",
           "layout": "vertical",
-          "spacing": "sm",
           "contents": [
             {
               "type": "button",
               "action": {
                 "type": "uri",
-                "label": "Add to Cart",
+                "label": "ดูรายละเอียด",
                 "uri": "https://linecorp.com"
               },
+              "color": "#264653",
               "style": "primary"
-            },
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Add to whishlist",
-                "uri": "https://linecorp.com"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_6_carousel.png",
-          "size": "full",
-          "aspectRatio": "20:13",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "text",
-              "text": "Metal Desk Lamp",
-              "size": "xl",
-              "weight": "bold",
-              "wrap": true
-            },
-            {
-              "type": "box",
-              "layout": "baseline",
-              "flex": 1,
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "$11",
-                  "flex": 0,
-                  "size": "xl",
-                  "weight": "bold",
-                  "wrap": true
-                },
-                {
-                  "type": "text",
-                  "text": ".99",
-                  "flex": 0,
-                  "size": "sm",
-                  "weight": "bold",
-                  "wrap": true
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "Temporarily out of stock",
-              "flex": 0,
-              "margin": "md",
-              "size": "xxs",
-              "color": "#FF5551",
-              "wrap": true
-            }
-          ]
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Add to Cart",
-                "uri": "https://linecorp.com"
-              },
-              "flex": 2,
-              "color": "#AAAAAA",
-              "style": "primary"
-            },
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Add to wish list",
-                "uri": "https://linecorp.com"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "See more",
-                "uri": "https://linecorp.com"
-              },
-              "flex": 1,
-              "gravity": "center"
             }
           ]
         }
